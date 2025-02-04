@@ -209,8 +209,9 @@ fun FutureDay(model: FutureModel){
             painter = painterResource(
                 id = getDrawabableRes(model.picPath)
             ), contentDescription = null,
-            modifier = Modifier.size(45.dp)
+            modifier = Modifier
                 .padding(32.dp)
+                .size(45.dp)
         )
         Text(text = model.status,
             modifier = Modifier
